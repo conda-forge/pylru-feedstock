@@ -27,7 +27,7 @@ test:
 
 about:
   home: https://github.com/jlhutch/pylru
-  license: LGPL
+  license: GPL-2.0
   license_file: LICENSE.txt
   summary: A least recently used (LRU) cache implementation
 
