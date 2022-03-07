@@ -1,5 +1,5 @@
 {% set name = "pylru" %}
-{% set version = "1.2.0" %}
+{% set version = "1.2.1" %}
 
 package:
   name: {{ name|lower }}
@@ -7,12 +7,12 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 492f934bb98dc6c8b2370c02c95c65516ddc08c8f64d27f70087eb038621d297
+  sha256: 47ad140a63ab9389648dadfbb4330700e0ffeeb28ec04664ee47d37ed133b0f4
 
 build:
   number: 0
   noarch: python
-  script: "{{ PYTHON }} -m pip install . --no-deps --ignore-installed -vvv"
+  script: {{ PYTHON }} -m pip install . --no-deps --ignore-installed -vvv
 
 requirements:
   host:
